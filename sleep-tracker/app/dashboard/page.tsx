@@ -127,7 +127,7 @@ export default function Dashboard() {
   );
 }
 
-export function calculateSleepStats(entries: SleepEntry[] = []): SleepStats {
+function calculateSleepStats(entries: SleepEntry[] = []): SleepStats {
   // Фильтруем некорректные записи
   const validEntries = entries.filter(entry => 
     entry && 
